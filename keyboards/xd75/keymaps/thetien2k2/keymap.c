@@ -21,18 +21,18 @@
 #define _S1 2
 
 // Defines the keycodes used by our macros in process_record_user
-enum custom_keycodes {
-    CDUP = SAFE_RANGE,
-    LSLA,
-    SVI
-};
+// enum custom_keycodes {
+//     CDUP = SAFE_RANGE,
+//     LSLA,
+//     SVI
+// };
 uint16_t lt12_timer;
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_QW] = LAYOUT_ortho_5x15( /* QWERTY */
     KC_GESC, KC_1, KC_2, KC_3, KC_4, KC_5,                  KC_MINS, KC_GRV, KC_EQL,    KC_6, KC_7, KC_8, KC_9, KC_0, KC_BSPC,
     KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T,                   KC_LBRC, KC_BSLS, KC_RBRC,  KC_Y, KC_U, KC_I, KC_O, KC_P, KC_QUOT,
     KC_CAPS, KC_A, KC_S, KC_D, KC_F, KC_G,                  KC_NO, KC_DEL, KC_NO,   KC_H, KC_J, KC_K, KC_L, KC_SCLN, KC_ENT,
-    KC_LSPO, KC_Z, KC_X, KC_C, KC_V, KC_B,                  KC_INS, KC_UP, KC_SLCK,     KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, KC_RSPC,
+    KC_LSPO, KC_Z, KC_X, KC_C, KC_V, KC_B,                  KC_NO, KC_UP, KC_NO,     KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, KC_RSPC,
     KC_LCTL, KC_LGUI, KC_LALT, MO(_S0), KC_SPC, KC_SPC,     KC_LEFT, KC_DOWN, KC_RGHT,  KC_SPC, KC_SPC, MO(_S1), KC_RALT, KC_RGUI, KC_RCTL
   ),
   [_S0] = LAYOUT_ortho_5x15( /* FUNCTION */
@@ -52,30 +52,30 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-  switch (keycode) {
-    case CDUP:
-      if (record->event.pressed) {
-        // SEND_STRING("cd .." SS_TAP(X_ENTER));
-        SEND_STRING("cd ..");
-      } else {
-        // when keycode QMKBEST is released
-      }
-      break;
-    case LSLA:
-      if (record->event.pressed) {
-        SEND_STRING("ls -la");
-      } else {
-        // when keycode QMKURL is released
-      }
-      break;
-    case SVI:
-      if (record->event.pressed) {
-        SEND_STRING("sudo vi ");
-      } else {
-        // when keycode QMKURL is released
-      }
-      break;
-  }
+  // switch (keycode) {
+  //   case CDUP:
+  //     if (record->event.pressed) {
+  //       // SEND_STRING("cd .." SS_TAP(X_ENTER));
+  //       SEND_STRING("cd ..");
+  //     } else {
+  //       // when keycode QMKBEST is released
+  //     }
+  //     break;
+  //   case LSLA:
+  //     if (record->event.pressed) {
+  //       SEND_STRING("ls -la");
+  //     } else {
+  //       // when keycode QMKURL is released
+  //     }
+  //     break;
+  //   case SVI:
+  //     if (record->event.pressed) {
+  //       SEND_STRING("sudo vi ");
+  //     } else {
+  //       // when keycode QMKURL is released
+  //     }
+  //     break;
+  // }
   return true;
 }
 

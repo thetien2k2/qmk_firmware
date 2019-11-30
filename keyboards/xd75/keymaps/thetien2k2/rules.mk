@@ -19,6 +19,6 @@ RGBLIGHT_ENABLE = yes        # Enable WS2812 RGB underlight.
 MOUSEKEY_ENABLE = yes       # Mouse keys(+4700)
 COMMAND_ENABLE = no
 BOOTMAGIC_ENABLE = full
-AUTO_SHIFT_ENABLE = yes
+AUTO_SHIFT_ENABLE = no
 # UCIS_ENABLE = yes
 # UNICODEMAP_ENABLE = yes
