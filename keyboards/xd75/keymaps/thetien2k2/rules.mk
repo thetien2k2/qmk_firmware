@@ -16,9 +16,9 @@
 BACKLIGHT_ENABLE = yes      # Enable keyboard backlight functionality
 CONSOLE_ENABLE = no         # Console for debug(+400)
 RGBLIGHT_ENABLE = yes        # Enable WS2812 RGB underlight. 
-MOUSEKEY_ENABLE = yes       # Mouse keys(+4700)
+MOUSEKEY_ENABLE = no       # Mouse keys(+4700)
 COMMAND_ENABLE = no
-BOOTMAGIC_ENABLE = full
+BOOTMAGIC_ENABLE = lite
 AUTO_SHIFT_ENABLE = no
 # UCIS_ENABLE = yes
 # UNICODEMAP_ENABLE = yes
