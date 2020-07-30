@@ -36,18 +36,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_LCTL, KC_LGUI, KC_LALT, MO(_S0), KC_SPC, KC_SPC,     KC_LEFT, KC_DOWN, KC_RGHT,  KC_SPC, KC_SPC, MO(_S1), KC_RALT, KC_RGUI, KC_RCTL
   ),
   [_S0] = LAYOUT_ortho_5x15( /* FUNCTION */
-    KC_GESC, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5,             KC_F6, KC_F7, KC_F8,        KC_NLCK, KC_PSLS, KC_PAST, KC_PMNS, KC_NO, KC_BSPC,
-    KC_TAB, KC_F9, KC_F10, KC_F11, KC_F12, KC_F13,          KC_F14, KC_F15, KC_F16,     KC_P7, KC_P8, KC_P9, KC_PPLS, KC_NO, KC_QUOT,
-    KC_CAPS, KC_NO,KC_NO, KC_NO, KC_NO, KC_NO,              KC_PSCR, KC_NO, KC_PAUS,    KC_P4, KC_P5, KC_P6, KC_NO, KC_NO, KC_ENT,
-    KC_LSPO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,             KC_WH_L, KC_PGUP, KC_WH_R,  KC_P1, KC_P2, KC_P3, KC_NO, KC_NO, KC_RSPC,
-    KC_LCTL, KC_LGUI, KC_LALT, _______, KC_SPC, KC_SPC,     KC_HOME, KC_PGDN, KC_END,   KC_P0, KC_P0, KC_KP_DOT, KC_RALT, KC_RGUI, KC_RCTL
+    KC_NO, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5,               KC_F11, KC_F12, KC_F13,     KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_NO,
+    KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,               KC_F14, KC_F15, KC_F16,     KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+    KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,               KC_PSCR, KC_NO, KC_NO,      KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+    KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,               KC_WH_L, KC_PGUP, KC_WH_R,  KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+    KC_NO, KC_NO, KC_NO, _______, KC_NO, KC_NO,             KC_HOME, KC_PGDN, KC_END,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO
   ),
   [_S1] = LAYOUT_ortho_5x15( /* FUNCTION */
     BL_TOGG, BL_BRTG, BL_DEC, BL_INC, KC_NO, KC_NO,         KC_NO, KC_NO, KC_NO,              KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, RESET,
     RGB_TOG, RGB_MOD, RGB_HUD, RGB_HUD, RGB_SAD, RGB_SAI,   RGB_VAD, RGB_VAI, KC_NO,          KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
     KC_MUTE, KC_VOLD, KC_VOLU, KC_NO, KC_NO, KC_NO,         KC_BTN4, KC_BTN3, KC_BTN5,        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-    KC_MRWD, KC_MPLY, KC_MFFD, KC_NO, KC_NO, KC_NO,         KC_BTN1, KC_MS_U, KC_BTN2,        KC_NO, KC_NO, KC_NO, KC_NO, KC_WH_U, KC_NO,
-    CG_TOGG, KC_NO, AG_TOGG, KC_NO, KC_NO, KC_NO,           KC_MS_L, KC_MS_D, KC_MS_R,        KC_NO, KC_NO, _______, KC_WH_L, KC_WH_D, KC_WH_R
+    KC_MRWD, KC_MPLY, KC_MFFD, KC_NO, KC_NO, KC_NO,         KC_BTN1, KC_MS_U, KC_BTN2,        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+    CG_TOGG, KC_NO, AG_TOGG, KC_NO, KC_NO, KC_NO,           KC_MS_L, KC_MS_D, KC_MS_R,        KC_NO, KC_NO, _______, KC_NO, KC_NO, KC_NO
   )
 };
 
